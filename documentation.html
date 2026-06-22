@@ -1,108 +1,135 @@
 <!DOCTYPE HTML>
 <!--
-	Trempim Project Site
-	Based on Hyperspace by HTML5 UP (html5up.net | @ajlkn)
-	Released for free under the CCA 3.0 license (html5up.net/license)
+	Trempim Project Site — "Night Road" bespoke design
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Documentation &mdash; Trempim</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Download and view the development documentation for the Trempim project." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/trempim.css" />
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Trempim</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">The App</a></li>
-						<li><a href="team.html">Team</a></li>
-						<li><a href="documentation.html" class="active">Documentation</a></li>
-						<li><a href="beta.html">Closed Beta</a></li>
-					</ul>
+		<header class="site-header">
+			<div class="shell">
+				<a href="index.html" class="brand"><span class="pin"></span>Trempim</a>
+				<nav class="nav">
+					<a href="index.html" class="link">The App</a>
+					<a href="team.html" class="link">Team</a>
+					<a href="documentation.html" class="link active">Docs</a>
+					<a href="beta.html" class="btn primary">Join the Beta <span class="arr">&rarr;</span></a>
 				</nav>
-			</header>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Documentation</h1>
-							<p>Browse and download the documentation produced during Trempim's
-							development &mdash; from the original proposal to the architecture,
-							testing, user and maintenance guides.</p>
-
-							<!-- DOCUMENTS
-							     Each row links to a file in the docs/ folder.
-							     Update the names, descriptions and hrefs as your documents are added. -->
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Document</th>
-											<th>Description</th>
-											<th></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Project Proposal</td>
-											<td>The initial vision, scope and goals for Trempim (PowerPoint).</td>
-											<td><a href="docs/project_proposal.pptx" class="button small" target="_blank" rel="noopener">View</a></td>
-										</tr>
-										<tr>
-											<td>Architecture Description Document</td>
-											<td>System architecture, components and key design decisions.</td>
-											<td><a href="docs/architecture_description_document.pdf" class="button small" target="_blank" rel="noopener">View</a></td>
-										</tr>
-										<tr>
-											<td>Test Document</td>
-											<td>Testing strategy, test cases and results.</td>
-											<td><a href="docs/test_document.pdf" class="button small" target="_blank" rel="noopener">View</a></td>
-										</tr>
-										<tr>
-											<td>User Instructions</td>
-											<td>Step-by-step guide for using the Trempim app.</td>
-											<td><a href="docs/user_instructions.pdf" class="button small" target="_blank" rel="noopener">View</a></td>
-										</tr>
-										<tr>
-											<td>Maintenance Guide</td>
-											<td>How to deploy, maintain and extend the system.</td>
-											<td><a href="docs/maintenance_guide.pdf" class="button small" target="_blank" rel="noopener">View</a></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-						</div>
-					</section>
-
 			</div>
+		</header>
+
+		<!-- Page hero -->
+		<section class="page-hero">
+			<div class="ghost" aria-hidden="true">תיעוד</div>
+			<div class="shell">
+				<div class="inner">
+					<div class="tag rise d1">Project archive</div>
+					<h1 class="rise d2">Documentation.</h1>
+					<p class="lead rise d3">Browse and download the documentation produced during Trempim's
+					development. To make a document available, drop the matching file into the
+					<code>docs/</code> folder &mdash; the links below already point to it.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Documents -->
+		<section class="section">
+			<div class="shell">
+				<!-- DOCUMENTS
+				     Each row links to a file in the docs/ folder.
+				     Update the names, descriptions and hrefs as your documents are added. -->
+				<div class="board reveal">
+					<div class="top">
+						<span>Trempim · document index</span>
+						<span class="live"><span class="dot"></span> docs/</span>
+					</div>
+					<div class="doc-row">
+						<div class="meta"><span class="code">DOC&middot;01</span><h3>Project Proposal</h3><p>The initial vision, scope and goals for Trempim.</p></div>
+						<a href="docs/project-proposal.pdf" class="btn small">Download &darr;</a>
+					</div>
+					<div class="doc-row">
+						<div class="meta"><span class="code">DOC&middot;02</span><h3>Requirements (SRS)</h3><p>Functional and non-functional software requirements.</p></div>
+						<a href="docs/requirements-srs.pdf" class="btn small">Download &darr;</a>
+					</div>
+					<div class="doc-row">
+						<div class="meta"><span class="code">DOC&middot;03</span><h3>Design Document</h3><p>System architecture, data model and UI design.</p></div>
+						<a href="docs/design-document.pdf" class="btn small">Download &darr;</a>
+					</div>
+					<div class="doc-row">
+						<div class="meta"><span class="code">DOC&middot;04</span><h3>Iteration 3 Report</h3><p>Progress, decisions and changes in our latest iteration.</p></div>
+						<a href="docs/iteration-3-report.pdf" class="btn small">Download &darr;</a>
+					</div>
+					<div class="doc-row">
+						<div class="meta"><span class="code">DOC&middot;05</span><h3>Testing Report</h3><p>Closed-beta testing approach, results and findings.</p></div>
+						<a href="docs/testing-report.pdf" class="btn small">Download &darr;</a>
+					</div>
+					<div class="doc-row">
+						<div class="meta"><span class="code">DOC&middot;06</span><h3>Final Presentation</h3><p>Project overview slides &mdash; "Final Stretch", June 2026.</p></div>
+						<a href="docs/final-presentation.pdf" class="btn small">Download &darr;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- What's left -->
+		<section class="why" id="whats-left">
+			<div class="shell">
+				<div class="head reveal">
+					<div class="tag">On the road ahead</div>
+					<h2>What's left.</h2>
+					<p>A quick look at what remains before the project wraps up.</p>
+				</div>
+				<div class="grid reveal">
+					<div class="cell">
+						<span class="num">/ 01</span>
+						<div class="glyph">📊</div>
+						<h3>User survey</h3>
+						<p>Complete the user survey and analyze the results from our testers.</p>
+					</div>
+					<div class="cell">
+						<span class="num">/ 02</span>
+						<div class="glyph">✅</div>
+						<h3>Submit Iteration 3</h3>
+						<p>Wrap up and submit the final iteration of the project.</p>
+					</div>
+					<div class="cell">
+						<span class="num">/ 03</span>
+						<div class="glyph">🐛</div>
+						<h3>Squash bugs</h3>
+						<p>Fix any issues discovered by testers during the closed beta.</p>
+					</div>
+				</div>
+				<div class="actions-row">
+					<a href="beta.html" class="btn primary">Join the closed beta <span class="arr">&rarr;</span></a>
+					<a href="index.html" class="btn">Back to the app</a>
+				</div>
+			</div>
+		</section>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; 2026 Trempim &mdash; Ben-Gurion University 4th-year project.</li><li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+		<footer class="site-footer">
+			<div class="shell">
+				<p>&copy; 2026 Trempim &mdash; Ben-Gurion University 4th-year project</p>
+				<p>Design <a href="http://html5up.net">remixed from HTML5 UP</a></p>
+			</div>
+		</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script>
+			const io = new IntersectionObserver((entries) => {
+				for (const e of entries) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }
+			}, { threshold: 0.18 });
+			document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+		</script>
 
 	</body>
 </html>
