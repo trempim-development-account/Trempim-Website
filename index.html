@@ -26,8 +26,20 @@
 					<a href="documentation.html" class="link">Docs</a>
 					<a href="beta.html" class="btn primary">Join the Beta <span class="arr">&rarr;</span></a>
 				</nav>
+				<button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+					<span></span><span></span><span></span>
+				</button>
 			</div>
 		</header>
+
+		<!-- Mobile nav drawer -->
+		<div class="mobile-drawer" id="mobile-drawer">
+			<a href="index.html" class="active">The App</a>
+			<a href="team.html">Team</a>
+			<a href="documentation.html">Docs</a>
+			<a href="beta.html" class="mob-cta">Join the Beta &rarr;</a>
+		</div>
+
 
 		<!-- Hero -->
 		<section class="hero">
@@ -248,6 +260,21 @@
 				}
 			}, { threshold: 0.18 });
 			document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+		</script>
+
+		<!-- Mobile menu toggle -->
+		<script>
+			(() => {
+				const burger = document.getElementById('burger');
+				const drawer = document.getElementById('mobile-drawer');
+				if (!burger || !drawer) return;
+				burger.addEventListener('click', () => {
+					const open = burger.classList.toggle('open');
+					drawer.classList.toggle('open');
+					burger.setAttribute('aria-expanded', open);
+					document.body.classList.toggle('nav-open', open);
+				});
+			})();
 		</script>
 
 	</body>
